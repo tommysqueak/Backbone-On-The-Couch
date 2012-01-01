@@ -26,14 +26,26 @@ switch(e.which)
 ## Usages
 
 In its simplest form you can do the following:
-''' javascript
+``` javascript
 
 var keypad = new Backbone.OnTheCouch.KeyEvents();
 
 //	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
 keypad.bind("key:up", function(){//do something on up});
 
-'''
+```
+
+If you're using an event aggregator. You can have the events trigger on that instead:
+``` javascript
+
+var eventAggregator = _.extend({}, Backbone.Events);
+var keypad = new Backbone.OnTheCouch.KeyEvents({eventAggregator: eventAggregator});
+
+//	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
+eventAggregator.bind("key:up", function(){//do something on up});
+
+```
+
 
 ## Running the Specs
 I'm using Jasmine to run the specs http://pivotal.github.com/jasmine/ and specifically the Jasmine Gem https://github.com/pivotal/jasmine/wiki/A-ruby-project to make it that little easier.
