@@ -26,8 +26,8 @@ switch(e.which)
 ## Usages
 
 In its simplest form you can do the following:
-``` javascript
 
+``` javascript
 var keypad = new Backbone.OnTheCouch.KeyEvents();
 
 //	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
