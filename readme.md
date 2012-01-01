@@ -32,18 +32,16 @@ var keypad = new Backbone.OnTheCouch.KeyEvents();
 
 //	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
 keypad.bind("key:up", function(){//do something on up});
-
 ```
 
 If you're using an event aggregator. You can have the events trigger on that instead:
-``` javascript
 
+``` javascript
 var eventAggregator = _.extend({}, Backbone.Events);
 var keypad = new Backbone.OnTheCouch.KeyEvents({eventAggregator: eventAggregator});
 
 //	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
 eventAggregator.bind("key:up", function(){//do something on up});
-
 ```
 
 
