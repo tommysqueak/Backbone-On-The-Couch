@@ -54,6 +54,9 @@ var keypad = new Backbone.OnTheCouch.KeyEvents({keyMaps: [
 keypad.bind("key:comma", function(){//do something odd});
 ```
 
+## Example
+There's a live running example of this plugin at http://xkcd.greatboxee.com . The great [XKCD](http://xkcd.com) comics viewed from your couch with a remote. Which was also turned into Boxee app.
+
 ## Running the Specs
 I'm using Jasmine to run the specs http://pivotal.github.com/jasmine/ and specifically the Jasmine Gem https://github.com/pivotal/jasmine/wiki/A-ruby-project to make it that little easier.
 
@@ -68,7 +71,7 @@ and view the specs in your browser at http://localhost:8888
 
 ## License
 
-Copyright (c) 2012 Tom Philip
+Copyright (c) 2012 Tom Philip, Conker Software ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
