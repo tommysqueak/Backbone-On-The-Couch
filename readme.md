@@ -34,16 +34,26 @@ var keypad = new Backbone.OnTheCouch.KeyEvents();
 keypad.bind("key:up", function(){//do something on up});
 ```
 
-If you're using an event aggregator. You can have the events trigger on that instead:
+If you're using an event aggregator or something else. You can have the events trigger on that instead:
 
 ``` javascript
 var eventAggregator = _.extend({}, Backbone.Events);
-var keypad = new Backbone.OnTheCouch.KeyEvents({eventAggregator: eventAggregator});
+var keypad = new Backbone.OnTheCouch.KeyEvents({triggerOn: eventAggregator});
 
 //	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
 eventAggregator.bind("key:up", function(){//do something on up});
 ```
 
+You can also provide your own keys that you want to listen for and thus replacing the default d-pad keys:
+
+``` javascript
+var keypad = new Backbone.OnTheCouch.KeyEvents({keyMaps: [
+															new Backbone.OnTheCouch.KeyEvent(188, "key:comma"),
+															new Backbone.OnTheCouch.KeyEvent(190, "key:fullstop")
+														]});
+
+keypad.bind("key:comma", function(){//do something odd});
+```
 
 ## Running the Specs
 I'm using Jasmine to run the specs http://pivotal.github.com/jasmine/ and specifically the Jasmine Gem https://github.com/pivotal/jasmine/wiki/A-ruby-project to make it that little easier.

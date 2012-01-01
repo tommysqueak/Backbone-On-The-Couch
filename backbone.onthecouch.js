@@ -50,7 +50,7 @@ Backbone.OnTheCouch = (function(Backbone){
 						];
 			
 			this.mapper = new KeyMapper(keyMaps);
-			this.eventAggregator = (options && options.eventAggregator) || this						
+			this.triggerOn = (options && options.triggerOn) || this						
 		},
 		
 		el: document,
@@ -62,7 +62,7 @@ Backbone.OnTheCouch = (function(Backbone){
 
 		keyPressed: function(e)
 		{
-			this.mapper.getMap(e.which).trigger(this.eventAggregator);
+			this.mapper.getMap(e.which).trigger(this.triggerOn);
 		}
 	});
 	

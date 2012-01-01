@@ -17,7 +17,7 @@ describe("On what events are triggered on", function(){
 	it("should trigger events on a supplied event aggregator", function(){
 		
 		var eventAggregator = _.extend({}, Backbone.Events);
-		var keypadEvents = new Backbone.OnTheCouch.KeyEvents({eventAggregator: eventAggregator});
+		var keypadEvents = new Backbone.OnTheCouch.KeyEvents({triggerOn: eventAggregator});
 		var eventFired = null;
 		
 		eventAggregator.bind("all", function(eventName){
