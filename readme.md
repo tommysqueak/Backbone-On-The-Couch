@@ -5,7 +5,7 @@ A simple [Backbone.js](http://documentcloud.github.com/backbone) plugin for use 
 Gives you something even your mum can understand
 
 ``` javascript
-keypad.bind("key:left", doSomethingOnKeyLeft);
+keypad.bind("key:left", doSomething);
 ```
 
 ### vs
@@ -15,7 +15,7 @@ What does the magic number 37 mean?
 switch(e.which)
 {
 	case: 37
-		doSomethingOnLeft();
+		doSomething();
 		break;
 	etc:
 	etc:
@@ -40,7 +40,6 @@ If you're using an event aggregator or something else. You can have the events t
 var eventAggregator = _.extend({}, Backbone.Events);
 var keypad = new Backbone.OnTheCouch.KeyEvents({triggerOn: eventAggregator});
 
-//	listen for any of the commonly used d-pad keys (left, right, up, down, enter, space and escape)
 eventAggregator.bind("key:up", function(){//do something on up});
 ```
 
