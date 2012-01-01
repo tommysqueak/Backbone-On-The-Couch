@@ -1,3 +1,7 @@
+/* 
+	Copyright (c) 2012 Tom Philip, http://tomphilip.me
+	Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php 
+*/
 
 Backbone.OnTheCouch = (function(Backbone){
 	
