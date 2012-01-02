@@ -3,7 +3,7 @@
 	Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php 
 */
 
-Backbone.OnTheCouch = (function(Backbone){
+Backbone.OnTheCouch = (function(Backbone, _){
 	
 	var KeyEvent = function(key, ev)
 	{
@@ -71,4 +71,4 @@ Backbone.OnTheCouch = (function(Backbone){
 		KeyEvent: KeyEvent
 	};
 	
-})(Backbone);
+})(Backbone, _);
