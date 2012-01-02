@@ -43,7 +43,7 @@ var keypad = new Backbone.OnTheCouch.KeyEvents({triggerOn: eventAggregator});
 eventAggregator.bind("key:up", function(){//do something on up});
 ```
 
-You can also provide your own keys that you want to listen for and thus replacing the default d-pad keys:
+You can also replace the d-pad key defaults and provide your own keys that you want to listen for:
 
 ``` javascript
 var keypad = new Backbone.OnTheCouch.KeyEvents({keyMaps: [
@@ -55,10 +55,10 @@ keypad.bind("key:comma", function(){//do something odd});
 ```
 
 ## Example
-There's a live running example of this plugin at http://xkcd.greatboxee.com . The great [XKCD](http://xkcd.com) comics viewed from your couch with a remote. Which was also turned into Boxee app.
+There's a live running example of this plugin at http://xkcd.greatboxee.com . The great [XKCD](http://xkcd.com/) comics viewed from your couch with a remote. Which was also turned into Boxee app.
 
 ## Running the Specs
-I'm using Jasmine to run the specs http://pivotal.github.com/jasmine/ and specifically the Jasmine Gem https://github.com/pivotal/jasmine/wiki/A-ruby-project to make it that little easier.
+I'm using [Jasmine](http://pivotal.github.com/jasmine/) to run the specs and specifically the [Jasmine Gem](https://github.com/pivotal/jasmine/wiki/A-ruby-project) to make it that little easier.
 
 ###Getting Setup
 	bundle install
