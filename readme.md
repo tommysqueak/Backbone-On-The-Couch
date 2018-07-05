@@ -58,7 +58,7 @@ keypad.bind("key:comma", function(){//do something odd});
 There's a live running example of this plugin at http://xkcd.greatboxee.com . The great [XKCD](http://xkcd.com/) comics viewed from your couch with a remote. Which was also turned into Boxee app.
 
 ## Running the Specs
-I'm using [Jasmine](http://pivotal.github.com/jasmine/) to run the specs and specifically the [Jasmine Gem](https://github.com/pivotal/jasmine/wiki/A-ruby-project) to make it that little easier.
+I'm using [Jasmine](https://jasmine.github.io/) to run the specs and specifically the [Jasmine Gem](https://github.com/jasmine/jasmine/wiki/A-Ruby-project-(with-or-without-Rails)) to make it that little easier.
 
 ###Getting Setup
 	bundle install
